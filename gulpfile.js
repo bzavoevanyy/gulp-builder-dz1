@@ -17,7 +17,7 @@ global.$ = {
 };
 
 $.path.task.forEach(function(taskPath) {
-  require(taskPath)();
+    require(taskPath)();
 });
 
 $.gulp.task('default', $.gulp.series(
